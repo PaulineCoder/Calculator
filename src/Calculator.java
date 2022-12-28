@@ -91,7 +91,7 @@ public class Calculator {
 
     public static String transformToRoman(String result) throws Exception {
         int finalNumber = Integer.parseInt(result);
-        if (finalNumber < 0) {
+        if (finalNumber < 0 || finalNumber == 0) {
             throw new Exception();
         }
         String output = null;
