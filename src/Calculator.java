@@ -24,7 +24,8 @@ public class Calculator {
         boolean isRoman = false;
         int operandFirst = 0;
         int operandSecond = 0;
-
+        
+        input = input.replace(" ","");
         String[] operands = input.split("\\+|\\*|/|-");
 
         if (operands.length > 2) {
